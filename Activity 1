@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main() {
+    int charging_level;
+    printf("Enter charging level:");
+    scanf("%d",&charging_level);
+    printf("Enter the value of charging level %d\n",charging_level);
+   
+    if (charging_level<50){
+     printf("Turn ON charger");
+}
+else 
+    printf("you are ready to go");
+}
