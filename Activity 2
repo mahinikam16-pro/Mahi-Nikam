@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void gradeCafeRating(int rating) {
+    if (rating < 1 || rating > 5) {
+        printf("Invalid rating. Please enter a rating between 1 and 5.\n");
+    } else if (rating == 5) {
+        printf("Good\n");
+    } else if (rating == 4) {
+        printf("Good\n");
+    } else if (rating == 3) {
+        printf("Averagen");
+    } else if (rating == 2) {
+        printf("Fair, we appreciate your feedback.\n");
+    } else { // rating == 1
+        printf("Poor, we are sorry to hear about your experience. We'll work on improving.\n");
+    }
+}
+
+int main() {
+    int rating;
+
+    printf("Enter the cafe rating (1-5): ");
+    if (scanf("%d", &rating) != 1) {
+        printf("Invalid input. Please enter a number.\n");
+        return 1;
+    }
+
+    gradeCafeRating(rating);
+
+    return 0;
+}
