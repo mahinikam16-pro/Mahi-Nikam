@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+    int qty, item;
+    char item_name[30];
+   printf("               TAJ HOTEL");
+   printf("\n       11, Koregaon Road, Pune, \n          Maharashtra, 411001 "); 
+   printf("\n                  BILL");
+  
+  
+   printf("\n*********************************************");
+    printf("\nBill No:      Date:            Time:");   
+     
+   printf("\n*********************************************");
+   printf("\nItem                  Price     Qty     Total");
+   
+   printf("\n*********************************************\n");
+   printf("\nRoti                    20       2       40 ");
+  printf("\nRice                    20       1       20 ");
+   printf("\nBhaji                   70       2      140");
+    printf("\nDal                     50       1       50");
+    printf("\n*********************************************\n");
+    printf("Grand Total :                           250");
+     printf("\n*********************************************\n");
+     printf("       Thank You, Please Visit Again");
+    return 0;
+}
