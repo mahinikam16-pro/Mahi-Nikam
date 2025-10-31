@@ -10,7 +10,7 @@ int main() {
   for(int i =0;i<3;i++){
       printf("\nenter Students Roll No.:");
       scanf("%d",&stu[i].stu_roll_no);
-      printf("\nenter Students name:");
+      printf("\nenter Students Name:");
       scanf("%s",stu[i].stu_name);
       printf("\nenter Students Marks:");
       scanf("%d",&stu[i].stu_mar);
@@ -18,8 +18,8 @@ int main() {
   
   for(int i =0;i<3;i++){
 printf("\nStudents Roll No.: %d",stu[i].stu_roll_no);
-printf("\nStudents name: %s",stu[i].stu_name);
-printf("\nStudents marks: %d",stu[i].stu_mar);
+printf("\nStudents Name: %s",stu[i].stu_name);
+printf("\nStudents Marks: %d",stu[i].stu_mar);
      
   }
   
