@@ -6,23 +6,29 @@ struct students{
 };
 
 int main() {
-  struct students stu[100];
+  struct students stu[100], sort;
   for(int i =0;i<3;i++){
-      printf("\nenter Students Roll No.:");
+      printf("\nEnter Students Roll No.:");
       scanf("%d",&stu[i].stu_roll_no);
-      printf("\nenter Students Name:");
+      printf("\nEnter Students Name:");
       scanf("%s",stu[i].stu_name);
-      printf("\nenter Students Marks:");
+      printf("\nEnter Students Marks:");
       scanf("%d",&stu[i].stu_mar);
   }
+   for (int i = 0; i < 3 - 1; i++) {
+        for (int j = i + 1; j < 3; j++) {
+            if (stu[i].stu_mar < stu[j].stu_mar) {
+                 sort = stu[i];
+                stu[i] = stu[j];
+                stu[j] = sort;
+            }
+        }
+    }
   
   for(int i =0;i<3;i++){
 printf("\nStudents Roll No.: %d",stu[i].stu_roll_no);
 printf("\nStudents Name: %s",stu[i].stu_name);
 printf("\nStudents Marks: %d",stu[i].stu_mar);
-     
-  }
-  
-
-    return 0;
+ }
+   return 0;
 }
