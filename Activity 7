@@ -1,0 +1,19 @@
+#include <stdio.h>
+int sum(int *n){
+    if(*n==0){
+        return 0;
+    }
+else{
+ int temp=*n;
+ (*n)--;
+ return temp+sum(n); 
+}
+}
+int main() {
+int n;
+int *ptr = &n;
+printf("Enter Number:");
+scanf("%d", &n);
+printf("The sum of the given numbers is %d",sum(ptr));
+return 0;
+}
