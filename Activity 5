@@ -1,0 +1,46 @@
+#include <stdio.h>
+int stringCompare(char s1[20],char s2[20]) {
+    int i = 0;
+
+    while (s1[i] != '\0' && s2[i] != '\0') {
+        if (s1[i] != s2[i]) {
+            return s1[i] - s2[i];  
+        }
+        i++;
+    }
+
+   return s1[i] - s2[i];
+}
+
+int stringLength(char s[]) {
+    int len = 0;
+ while (s[len] != '\0') {
+        len++;
+    }
+    return len;
+}
+int main() {
+    char s1[20], s2[20];
+    int result;
+
+printf("Enter first string: ");
+scanf("%s", s1);
+
+printf("Enter second string: ");
+scanf("%s", s2);
+
+    
+result = stringCompare(s1, s2);
+
+    if (result == 0)
+        printf("s1 and s2 are same\n");
+    else if (result < 0)
+        printf("s1 is smaller than s2\n");
+    else
+        printf("s1 is greater than s2\n");
+
+printf("Length of s1 = %d\n", stringLength(s1));
+printf("Length of s2 = %d\n", stringLength(s2));
+
+    return 0;
+}
